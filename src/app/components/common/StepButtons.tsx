@@ -20,7 +20,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
         type="submit"
         className={`${
           step > 1 ? 'block' : 'hidden'
-        } w-12 h-12 xl:w-16 xl:h-16 shrink-0 bg-btn-gr hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
+        } w-12 h-12 xl:w-16 xl:h-16 shrink-0 bg-brand-primary hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
         onClick={prev}
       >
         <ChevronLeftIcon className="w-6 h-6" />
@@ -34,7 +34,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
         type="submit"
         className={`${
           step < steps.length ? 'block' : 'hidden'
-        } w-12 h-12 xl:w-16 xl:h-16 shrink-0 bg-btn-gr hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
+        } w-12 h-12 xl:w-16 xl:h-16 shrink-0 bg-brand-primary hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
         onClick={next}
       >
         <ChevronRightIcon className="w-6 h-6" />
