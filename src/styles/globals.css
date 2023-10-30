@@ -80,9 +80,18 @@ h2 {
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("/assets/font/Montserrat-Black.ttf") format("truetype");
+  font-family: 'Montserrat';
+  src: url('/assets/font/Montserrat-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+/* Checbox Input Styles */
+input[type='checkbox'] {
+  @apply appearance-none w-6 h-6 md:w-7 md:h-7 rounded-md border-2 border-[#70dd00] bg-white;
+}
+
+input[type='checkbox']:checked {
+  @apply bg-gradient-to-r from-[#509a45] to-[#70dd00] border-none;
 }

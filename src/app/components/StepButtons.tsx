@@ -14,7 +14,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
   steps,
 }) => {
   return (
-    <div className="max-w-2xl mx-auto flex items-center justify-between mt-5">
+    <div className="max-w-2xl mx-auto flex items-center justify-between mt-10">
       <button
         type="submit"
         className={`${
@@ -37,9 +37,9 @@ const StepButtons: React.FC<StepButtonProps> = ({
           />
         </svg>
       </button>
-      <p className="flex-1 md:text-lg lg:text-xl font-medium mt-5">
-        Step <span className="font-bold font-montserrat">{step}</span> of{' '}
-        <span className="font-bold font-montserrat">4</span> to claim{' '}
+      <p className="flex-1 text-lg lg:text-xl font-medium mt-5">
+        Step <span className="font-bold font-montserrat mx-1">{step}</span> of
+        <span className="font-bold font-montserrat mx-1">4</span> to claim
         <span className="hidden sm:inline-block">reward</span>
       </p>
       <button
