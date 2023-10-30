@@ -22,7 +22,7 @@ const page: React.FC = () => {
   }
 
   return (
-    <div className="max-w-base mx-auto text-center px-6 py-10 lg:py-16">
+    <div className="max-w-base mx-auto text-center px-6 pt-10 lg:pt-16">
       {steps.map((step, idx) => (
         <div key={idx} className={`${curStep - 1 !== idx ? 'hidden' : ''}`}>
           {step}
