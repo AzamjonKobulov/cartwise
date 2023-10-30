@@ -28,7 +28,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
       <p className="flex-1 text-lg lg:text-xl font-medium mt-5">
         Step <span className="font-bold font-montserrat mx-1">{step}</span> of
         <span className="font-bold font-montserrat mx-1">4</span> to claim
-        <span className="hidden sm:inline-block">reward</span>
+        <span className="hidden sm:inline-block ml-1">your reward</span>
       </p>
       <button
         type="submit"

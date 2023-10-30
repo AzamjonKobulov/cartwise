@@ -14,7 +14,7 @@ const chexboxes: Select[] = [
 
 const StepOne: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto  space-y-7">
+    <div className="max-w-4xl mx-auto space-y-10 md:space-y-14">
       <div className="space-y-3">
         <h2 className="text-center">
           <span className="text-gradient">Welcome</span> to Cartwise
