@@ -1,4 +1,5 @@
 import { MouseEventHandler } from 'react';
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
 
 interface StepButtonProps {
   next: MouseEventHandler<HTMLButtonElement>;
@@ -22,20 +23,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
         } w-12 h-12 lg:w-16 lg:h-16 shrink-0 bg-btn-gr hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
         onClick={prev}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
+        <ChevronLeftIcon className="w-6 h-6" />
       </button>
       <p className="flex-1 text-lg lg:text-xl font-medium mt-5">
         Step <span className="font-bold font-montserrat mx-1">{step}</span> of
@@ -49,20 +37,7 @@ const StepButtons: React.FC<StepButtonProps> = ({
         } w-12 h-12 lg:w-16 lg:h-16 shrink-0 bg-btn-gr hover:bg-btn-gr-reverse flex items-center justify-center text-white rounded-full transition-all duration-200 space-x-2.5 py-5 mt-5`}
         onClick={next}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-          />
-        </svg>
+        <ChevronRightIcon className="w-6 h-6" />
       </button>
     </div>
   );

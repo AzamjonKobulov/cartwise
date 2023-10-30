@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import StepButtons from 'app/components/StepButtons';
+import StepButtons from '../components/common/StepButtons';
 import StepOne from 'app/components/StepOne';
 import StepTwo from 'app/components/StepTwo';
 import StepThree from 'app/components/StepThree';

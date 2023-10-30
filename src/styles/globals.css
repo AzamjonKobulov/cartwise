@@ -89,7 +89,7 @@ h2 {
 
 /* Checbox Input Styles */
 input[type='checkbox'] {
-  @apply appearance-none w-6 h-6 md:w-7 md:h-7 rounded-md border-2 border-[#70dd00] bg-white;
+  @apply appearance-none w-5 h-5 md:w-6 md:h-6 rounded-md border-2 border-[#70dd00] bg-white;
 }
 
 input[type='checkbox']:checked {

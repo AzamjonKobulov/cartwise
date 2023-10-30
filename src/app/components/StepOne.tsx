@@ -35,16 +35,16 @@ const StepOne: React.FC = () => {
           ></iframe>
         </div>
       </div>
-      <form className="lg:w-2/3 flex flex-col gap-3.5 md:gap-5 md:text-lg lg:text-xl">
+      <form className="lg:w-1/2 flex flex-col gap-3.5 md:gap-5 md:text-lg lg:text-xl">
         {chexboxes.map((check) => (
           <label
             htmlFor={check.id}
-            className="flex items-center justify-between gap-10 text-start text-xl md:text-2xl font-medium cursor-pointer"
+            className="flex items-center justify-between gap-10 text-start text-lg md:text-xl font-medium cursor-pointer"
           >
             <span>{check.label}</span>
             <div className="relative">
               <input type="checkbox" id={check.id} />
-              <span className="absolute top-1 left-1">
+              <span className="absolute top-0.5 left-0.5">
                 <svg
                   viewBox="0 0 14 14"
                   fill="none"
