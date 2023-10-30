@@ -1,5 +1,15 @@
 import React from 'react';
 
+interface Data {
+  label: string;
+}
+
+const data: Data[] = [
+  { label: 'LIDL Gift Card' },
+  { label: 'Amazon Gift Card' },
+  { label: 'PayPal transfer' },
+];
+
 const StepFour: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-7 lg:space-y-14">
@@ -12,15 +22,14 @@ const StepFour: React.FC = () => {
         </h4>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 text-xl font-semibold">
-        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
-          LIDL Gift Card
-        </div>
-        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
-          Amazon Gift Card
-        </div>
-        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
-          PayPal transfer
-        </div>
+        {data.map((item, idx) => (
+          <div
+            key={idx}
+            className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg hover:-translate-y-4 duration-300 transition-all p-10"
+          >
+            {item.label}
+          </div>
+        ))}
       </div>
       <h4 className="max-w-3xl mx-auto font-source-pro text-center lg:text-lg xl:text-xl">
         The Voucher will be sent to your email:{' '}
