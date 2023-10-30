@@ -12,13 +12,13 @@ const StepFour: React.FC = () => {
         </h4>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 text-xl font-semibold">
-        <div className="h-64 grid place-content-center bg-btn-gr cursor-pointer rounded-lg p-10">
+        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
           LIDL Gift Card
         </div>
-        <div className="h-64 grid place-content-center bg-btn-gr cursor-pointer rounded-lg p-10">
+        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
           Amazon Gift Card
         </div>
-        <div className="h-64 grid place-content-center bg-btn-gr cursor-pointer rounded-lg p-10">
+        <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
           PayPal transfer
         </div>
       </div>
