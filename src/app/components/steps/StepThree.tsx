@@ -66,7 +66,7 @@ const StepThree: React.FC = () => {
         <div className='flex justify-center'>
           <button
             type='submit'
-            className='lg:w-2/5 bg-btn-gr self-center hover:bg-btn-gr-reverse flex items-center text-base justify-center gap-7 text-white rounded-full transition-all duration-200 px-5 py-3'>
+            className='bg-btn-gr self-center hover:bg-btn-gr-reverse flex items-center text-base justify-center gap-2 text-white rounded-full transition-all duration-200 pl-7 pr-3.5 py-3'>
             <span className='font-medium'>Refer</span>
             <ChevronRightIcon className='w-6 h-6 shrink-0 rotate-90 lg:rotate-0' />
           </button>
