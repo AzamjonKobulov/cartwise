@@ -11,7 +11,7 @@ const StepFour: React.FC = () => {
           Claim ZZZ in reward
         </h4>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 text-xl font-semibold">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 text-xl font-semibold">
         <div className="h-64 grid place-content-center bg-brand-gren-100 cursor-pointer rounded-lg p-10">
           LIDL Gift Card
         </div>
