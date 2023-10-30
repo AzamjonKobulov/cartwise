@@ -2,11 +2,9 @@
 
 import { useState } from 'react';
 
-import StepButtons from '../components/common/StepButtons';
-import StepOne from 'app/components/StepOne';
-import StepTwo from 'app/components/StepTwo';
-import StepThree from 'app/components/StepThree';
-import StepFour from 'app/components/StepFour';
+import { StepFour, StepOne, StepThree, StepTwo } from 'app/components/steps';
+import StepNavigation from 'app/components/steps/StepsNavigation';
+
 
 const steps = [<StepOne />, <StepTwo />, <StepThree />, <StepFour />];
 
@@ -28,7 +26,7 @@ const page: React.FC = () => {
           {step}
         </div>
       ))}
-      <StepButtons
+      <StepNavigation
         prev={prevStep}
         next={nextStep}
         step={curStep}
